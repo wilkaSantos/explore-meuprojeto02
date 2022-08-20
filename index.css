@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* == GLOBAL == */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+
+    /*1. em quantos graus vai a cor, 2. a cor que vai aparecer em 80%, 3. cor que vai aparecer em 100%*/
+    background: linear-gradient(180deg, rgba(277, 255, 248, 0) 82.08%, rgba(277, 255, 248, 0.38) 100%);
+    
+    min-height: 100vh;
+}
+
+.page{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+/* == CABEÇALHO == */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;   
+}
+
+.cabecalho a{
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #89C5CC;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 48px; /*essa propridade é utlizada para colocar espaçamento nos elementos quando o display é flex;*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+a{
+    color: #1f1534;
+    text-decoration: none;
+}
+
+ul li a{
+    opacity: 0.5;
+}
+
+ul li a:hover{
+    font-weight: bolder;
+    opacity: 1;
+}
+
+
+/* == HERO == */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-family: 'Mulish', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+    color: #1f1534;
+
+    width: 490px;
+}
+
+.titulo strong{
+    color: #89c5cc;
+    font-weight: bold;
+}
+
+.paragrafro{
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+
+    margin: 40px 0;
+    width: 438px;
+}
+
+.botao{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #69b99d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 32px 15px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #4ea788;
+}
+
+/* == RODAPÉ == */
+
+.rodaPe{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.texto a{
+    font-weight: bold;
+}
+
+.balls{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
